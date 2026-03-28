@@ -24,7 +24,7 @@ L_target = 0.5
 N_opt = 1000
 N_eff_opt = 1 / ((1 / N_opt) + (np.pi * L_target**2 / area))
 ax.plot(N_opt, N_eff_opt, 'ro', markersize=10, zorder=5)
-ax.annotate(f'Economic Sweet Spot\nN=1000, N_eff={N_eff_opt:.0f}', 
+ax.annotate(f'Observational Sweet Spot\nN=1000, N_eff={N_eff_opt:.0f}', 
             xy=(N_opt, N_eff_opt), xytext=(N_opt*1.2, N_eff_opt-200),
             arrowprops=dict(facecolor='red', shrink=0.05, width=1.5), fontweight='bold')
 
